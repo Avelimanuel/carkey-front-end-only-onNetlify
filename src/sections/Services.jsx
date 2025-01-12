@@ -106,7 +106,7 @@ const Services = () => {
           className="h-72 w-80 border-2 border-red-400 rounded overflow-hidden shadow-lg"
         >
           <motion.img
-            src="/images/lexuslostkey.jpg"
+            src="/images/emergencydoorunlocking.jpg"
             className="h-full w-full object-cover object-center"
             whileHover={{ scale: 1.2 }}
           />
