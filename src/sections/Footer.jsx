@@ -3,49 +3,57 @@ import { FaLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  //Getting the current Year
-
+  // Getting the current Year
   const currentYear = new Date().getFullYear();
+
   return (
-    <motion.section
+    <motion.footer
       initial={{ y: 300, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.2, y: { type: "spring", stiffness: 10 } }}
+      transition={{ delay: 0.2, y: { type: "spring", stiffness: 50 } }}
+      className="bg-red-600 text-white py-8"
     >
-      <div className="flex justify-evenly items-center gap-5 p-8 bg-red-500  max-lg:flex-col">
-        <div className="flex flex-col flex-1 ">
-          <h1 className="text-white font-extrabold underline">Our Services</h1>
-          <ul>
-            <li>Spare Key Programming</li>
-            <li className="max-lg-custom">All Keys Lost Programming</li>
-            <li>Fleet & Fuel Management</li>
-            <li>Car Computer Repair & Programming</li>
-            <li>Car Tracking Devices</li>
-            <li>Car Electroncs & Wiring</li>
-            <li>Car Alarms</li>
-            <li>Dash Cameras</li>
-            <li>Reverse Cameras</li>
-          </ul>
+      <div className="container mx-auto px-4">
+        {/* Main Footer Section */}
+        <div className="flex flex-wrap justify-between items-start gap-10 lg:flex-nowrap">
+          {/* Services Section */}
+          <div className="flex-1">
+            <h1 className="text-lg font-bold underline mb-4">Our Services</h1>
+            <ul className="space-y-2 text-sm">
+              <li>Spare Key Programming</li>
+              <li>All Keys Lost Programming</li>
+              <li>Fleet & Fuel Management</li>
+              <li>Car Computer Repair & Programming</li>
+              <li>Car Tracking Devices</li>
+              <li>Car Electronics & Wiring</li>
+              <li>Car Alarms</li>
+              <li>Dash Cameras</li>
+              <li>Reverse Cameras</li>
+            </ul>
+          </div>
+
+          {/* Location Section */}
+          <div className="flex-1">
+            <h1 className="text-lg font-bold underline mb-4">Location</h1>
+            <div className="flex items-center gap-2 mb-2">
+              <FaLocationDot size={20} className="text-white" />
+              <p className="text-sm">Along Kiambu Road Near AAR Hospital</p>
+            </div>
+            <p className="text-2xl font-bold mt-2">0716 884 011</p>
+          </div>
         </div>
 
-        <div className="flex flex-col flex-1 flex-shrink">
-          <h1 className="text-white font-extrabold underline">Location</h1>
-          <FaLocationDot className="text-white" />
-          <h6>Along Kiambu Road Near AAR Hospital</h6>
-          <h6 className="text-2xl font-bold">0716 884 011</h6>
-        </div>
-      </div>
-      <div className="flex justify-center items-center bg-red-500">
-        <div>
-          <h6 className="text-center text-white">
+        {/* Bottom Footer Section */}
+        <div className="mt-8 border-t border-red-500 pt-4">
+          <h6 className="text-center text-sm">
             &copy; {currentYear} Car Key Experts. All rights reserved.{" "}
-            <span className="text-blue-800 font-bold">
+            <span className="text-blue-300 font-bold">
               Crafted By WebCraftersKE
             </span>
           </h6>
         </div>
       </div>
-    </motion.section>
+    </motion.footer>
   );
 };
 
