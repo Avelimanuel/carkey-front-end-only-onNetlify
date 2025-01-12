@@ -18,6 +18,24 @@ const PremiumServices = () => {
       <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
         {[
           {
+            title: "Car Key Cutting",
+            description:
+              "We offer specialized car key cutting services to ensure you have a dependable key for any situation. Our team of professionals uses state-of-the-art tools to accurately cut keys for a wide range of vehicle makes and models. Whether you need an extra key, have lost your original, or need a complete replacement, we provide quick and effective solutions. Trust CarKey Experts for precise key cutting that guarantees you always have a perfectly functioning key when you need it.",
+            image: "/images/carkeycutting.jpg",
+          },
+          {
+            title: "Car Track Installation",
+            description:
+              "At CarKey Experts, we are dedicated to enhancing the security and convenience of your vehicle. We offer professional installation of advanced car tracking devices that provide real-time location tracking and comprehensive monitoring of your vehicle. Our state-of-the-art tracking systems ensure you always know where your car is, giving you peace of mind against theft and unauthorized use. With features like geofencing, speed alerts, and detailed trip history, our car tracking devices are designed to keep you informed and in control. Trust our experienced technicians to install your tracking device seamlessly and efficiently, ensuring optimal performance and security. Protect your investment and stay connected with our reliable car tracking solutions.",
+            image: "/images/gpsmap.jpg",
+          },
+          {
+            title: "Fleet Management Systems",
+            description:
+              "At CarKey Experts, we specialize in providing top-notch fleet and fuel management system installations to optimize your business operations. Our cutting-edge systems offer comprehensive monitoring and control over your entire fleet, allowing you to track vehicle locations, manage fuel consumption, and ensure driver efficiency. With our advanced technology, you can receive real-time data and analytics, helping you make informed decisions to reduce costs, improve productivity, and enhance overall fleet performance. Our expert technicians ensure a seamless installation process, customized to meet the specific needs of your business. Enhance your fleet management with our reliable and efficient solutions, and take control of your operational efficiency and fuel expenses like never before.",
+            image: "/images/fleetmanagement.jpg",
+          },
+          {
             title: "EGR Error Solution",
             description:
               "When we talk about upgrading vehicle performance, one of the most sought-after ECU tuning services is the EGR delete. In diesel engines, the Exhaust Gas Recirculation (EGR) system is one of the most important but also one of the most problematic components. We provide specialized solutions for resolving EGR errors. Our expert technicians use advanced diagnostic tools to accurately identify and fix EGR issues, ensuring that your vehicle runs smoothly and efficiently. Trust us to keep your engine performing at its best.",
@@ -40,24 +58,6 @@ const PremiumServices = () => {
             description:
               "At CarKey Experts, we provide professional DPF (Diesel Particulate Filter) delete services directly from your vehicle's computer software. Our experienced technicians use advanced diagnostic tools to safely and effectively remove the DPF system from your vehicle's software, enhancing engine performance and fuel efficiency. This service is ideal for off-road or competition vehicles where regulations permit. Trust us to deliver a seamless DPF delete process that optimizes your vehicle's performance and reliability.",
             image: "/images/dpf.jpg",
-          },
-          {
-            title: "Car Track Installation",
-            description:
-              "At CarKey Experts, we are dedicated to enhancing the security and convenience of your vehicle. We offer professional installation of advanced car tracking devices that provide real-time location tracking and comprehensive monitoring of your vehicle. Our state-of-the-art tracking systems ensure you always know where your car is, giving you peace of mind against theft and unauthorized use. With features like geofencing, speed alerts, and detailed trip history, our car tracking devices are designed to keep you informed and in control. Trust our experienced technicians to install your tracking device seamlessly and efficiently, ensuring optimal performance and security. Protect your investment and stay connected with our reliable car tracking solutions.",
-            image: "/images/gpsmap.jpg",
-          },
-          {
-            title: "Fleet Management Systems",
-            description:
-              "At CarKey Experts, we specialize in providing top-notch fleet and fuel management system installations to optimize your business operations. Our cutting-edge systems offer comprehensive monitoring and control over your entire fleet, allowing you to track vehicle locations, manage fuel consumption, and ensure driver efficiency. With our advanced technology, you can receive real-time data and analytics, helping you make informed decisions to reduce costs, improve productivity, and enhance overall fleet performance. Our expert technicians ensure a seamless installation process, customized to meet the specific needs of your business. Enhance your fleet management with our reliable and efficient solutions, and take control of your operational efficiency and fuel expenses like never before.",
-            image: "/images/fleetmanagement.jpg",
-          },
-          {
-            title: "Car Key Cutting",
-            description:
-              "We offer specialized car key cutting services to ensure you have a dependable key for any situation. Our team of professionals uses state-of-the-art tools to accurately cut keys for a wide range of vehicle makes and models. Whether you need an extra key, have lost your original, or need a complete replacement, we provide quick and effective solutions. Trust CarKey Experts for precise key cutting that guarantees you always have a perfectly functioning key when you need it.",
-            image: "/images/carkeycutting.jpg",
           },
         ].map((service, index) => (
           <motion.div
