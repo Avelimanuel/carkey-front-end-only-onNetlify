@@ -144,7 +144,7 @@ const PremiumServices = () => {
           className="flex flex-col lg:flex-row-reverse items-center gap-10"
         >
           <img
-            src="/images/batteries.jpg"
+            src="/images/ignitionlock.jpg"
             alt="Car Key Battery Replacement"
             className="w-full max-w-md rounded-lg shadow-md"
           />
