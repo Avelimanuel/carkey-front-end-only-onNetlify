@@ -24,6 +24,12 @@ const PremiumServices = () => {
             image: "/images/egr.jpg",
           },
           {
+            title: "ECU repair",
+            description:
+              "At CarKey Experts, we offer professional ECU (Engine Control Unit) repair services for a wide range of vehicles. The ECU is the brain of your car's engine management system, controlling various essential functions such as fuel injection, ignition timing, and emissions control. If your vehicle is experiencing issues such as poor performance, difficulty starting, or error codes related to the ECU, our experienced technicians are here to help. We use advanced diagnostic tools and techniques to accurately identify and repair faults in your ECU, ensuring your car operates at peak performance. With our reliable ECU repair services, you can trust us to restore your vehicle’s functionality and get you back on the road quickly.",
+            image: "/images/ecurepair.jpg",
+          },
+          {
             title: "Catalytic Error Solution",
             description:
               "Removing a catalytic converter (CAT) may increase power and slightly decrease fuel consumption. On some vehicles, physically removing the CAT can eventually lead to an engine malfunction, causing the vehicle to enter safety or limp mode. We can resolve this issue on most vehicles by removing the CAT function from the engine control unit (ECU) software. This means the ECU will no longer recognize the catalytic converter, preventing the vehicle from entering safety mode or limp mode.",
