@@ -70,7 +70,7 @@ const Services = () => {
             Spare Key Services
           </h2>
           <motion.p {...fadein} className="text-gray-700 leading-6">
-            At CarKeyExperts, we offer reliable spare key services to ensure you
+            We offer reliable spare key services to ensure you
             always have a backup for your vehicle. Our expert technicians can
             quickly and accurately cut and program additional keys for all car
             makes and models, providing you with the convenience and peace of
