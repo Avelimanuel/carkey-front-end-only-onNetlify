@@ -7,18 +7,18 @@ const Services = () => {
   };
 
   return (
-    <section className="py-10 px-6">
+    <section className="py-10 px-6 lg:px-16">
       <div className="mb-8 text-center">
         <h1 className="text-3xl font-bold text-gray-800">Our Services</h1>
       </div>
 
       {/* Lost Key Services Section */}
       <div className="flex flex-wrap justify-center items-center gap-10">
-        <div className="flex flex-col items-center max-w-lg">
+        <div className="flex flex-col items-center max-w-lg text-center">
           <h2 className="text-2xl font-bold text-red-700 mb-4">
             Lost Key Services
           </h2>
-          <motion.p {...fadein} className="text-gray-700 leading-6 text-center">
+          <motion.p {...fadein} className="text-gray-700 leading-6">
             At <span className="text-red-500">CarKeyExperts</span>, we
             understand how frustrating and stressful it can be to lose your car
             keys. That's why we offer comprehensive{" "}
@@ -65,11 +65,11 @@ const Services = () => {
             whileHover={{ scale: 1.2 }}
           />
         </motion.div>
-        <div className="flex flex-col items-center max-w-lg">
-          <h2 className="text-2xl font-bold text-red-700 mb-4 text-center">
+        <div className="flex flex-col items-center max-w-lg text-center">
+          <h2 className="text-2xl font-bold text-red-700 mb-4">
             Spare Key Services
           </h2>
-          <motion.p {...fadein} className="text-gray-700 leading-6 text-center">
+          <motion.p {...fadein} className="text-gray-700 leading-6">
             At CarKeyExperts, we offer reliable spare key services to ensure you
             always have a backup for your vehicle. Our expert technicians can
             quickly and accurately cut and program additional keys for all car
@@ -79,12 +79,14 @@ const Services = () => {
           </motion.p>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-10">
-        <div className="flex flex-col items-center max-w-lg">
+
+      {/* Emergency Car Door Unlocking Section */}
+      <div className="flex flex-wrap justify-center items-center gap-10 mt-16">
+        <div className="flex flex-col items-center max-w-lg text-center">
           <h2 className="text-2xl font-bold text-red-700 mb-4">
             Emergency Car Door Unlocking
           </h2>
-          <motion.p {...fadein} className="text-gray-700 leading-6 text-center">
+          <motion.p {...fadein} className="text-gray-700 leading-6">
             At CarKey Experts, we understand how frustrating and stressful it
             can be to find yourself locked out of your vehicle, especially when
             your keys are lost or accidentally left inside the car. That's why
