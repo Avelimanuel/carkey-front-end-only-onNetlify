@@ -5,34 +5,41 @@ import CarsWeWorkOn from "./sections/CarsWeWorkOn";
 import Footer from "./sections/Footer";
 import Hero from "./sections/Hero";
 import PremiumServices from "./sections/PremiumServices";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./sections/Services";
+import WorkGalleryPage from "./pages/workgallery";
 
-
-const App = () =>{
+const App = () => {
   return (
-    <main className="relative">
-      <Nav />
-      <LocationBar/>
-      <section className="container mx-auto">
-        <Hero/>
-      </section>
-      <section>
-        <Services/>
-      </section>
-      <section>
-        <PremiumServices/>
-      </section>
-
-      <section>
-        
-      </section>
-      
-      <section>
-        <Footer/>
-      </section>
-     
-    </main>
+    <Router>
+      <main className="relative">
+        <Nav />
+        <LocationBar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <section className="container mx-auto">
+                  <Hero />
+                </section>
+                <section>
+                  <Services />
+                </section>
+                <section>
+                  <PremiumServices />
+                </section>
+                <section>
+                  <Footer />
+                </section>
+              </>
+            }
+          />
+          <Route path="/workgallery" element={<WorkGalleryPage />} />
+        </Routes>
+      </main>
+    </Router>
   );
-}
+};
 
-export default App
+export default App;
