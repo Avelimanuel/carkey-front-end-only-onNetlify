@@ -73,7 +73,7 @@ export const workGallery = [
     },
     {
         id: 13,
-        title: 'Toyota key upgrade',
+        title: 'Car key upgrade',
         image: "/workgalleryimages/hiluxkeyup.jpg",
         description: 'Toyota hilux key upgrade to a flip key.'
       },
