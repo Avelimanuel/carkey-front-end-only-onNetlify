@@ -2,178 +2,160 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const PremiumServices = () => {
+  const fadeIn = {
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  };
+
+  const slideIn = {
+    initial: { opacity: 0, x: 50 },
+    whileInView: { opacity: 1, x: 0, transition: { duration: 0.6, type: "spring", stiffness: 100 } },
+  };
+
   return (
-    <section className="bg-gray-50 py-20 px-5">
+    <section className="py-20 px-4 sm:px-6 lg:px-20 bg-white">
       {/* Section Heading */}
       <motion.h1
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 80 }}
-        className="text-center text-4xl font-extrabold text-gray-800 sm:text-5xl mb-10"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-center text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12"
       >
-        Our <span className="text-red-500">Premium Services</span>
+        Our <span className="text-red-600">Premium Services</span>
       </motion.h1>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
           {
             title: "Car Key Cutting",
             description:
-              "We offer specialized car key cutting services to ensure you have a dependable key for any situation. Our team of professionals uses state-of-the-art tools to accurately cut keys for a wide range of vehicle makes and models. Whether you need an extra key, have lost your original, or need a complete replacement, we provide quick and effective solutions. Trust CarKey Experts for precise key cutting that guarantees you always have a perfectly functioning key when you need it.",
+              "Our specialized car key cutting services ensure you have a reliable key for any situation. Using advanced tools, our professionals cut keys for all vehicle makes and models with precision. Whether you need a spare, lost your original, or require a replacement, we deliver fast, effective solutions for a perfectly functioning key.",
             image: "/images/carkeycutting.jpg",
           },
           {
             title: "Car Track Installation",
             description:
-              "At CarKey Experts, we are dedicated to enhancing the security and convenience of your vehicle. We offer professional installation of advanced car tracking devices that provide real-time location tracking and comprehensive monitoring of your vehicle. Our state-of-the-art tracking systems ensure you always know where your car is, giving you peace of mind against theft and unauthorized use. With features like geofencing, speed alerts, and detailed trip history, our car tracking devices are designed to keep you informed and in control. Trust our experienced technicians to install your tracking device seamlessly and efficiently, ensuring optimal performance and security. Protect your investment and stay connected with our reliable car tracking solutions.",
+              "Enhance your vehicle's security with our advanced car tracking systems. We install state-of-the-art devices offering real-time location tracking, geofencing, speed alerts, and trip history. Our expert technicians ensure seamless installation for optimal performance, giving you peace of mind against theft and unauthorized use.",
             image: "/images/gpsmap.jpg",
           },
           {
             title: "Fleet Management Systems",
             description:
-              "At CarKey Experts, we specialize in providing top-notch fleet and fuel management system installations to optimize your business operations. Our cutting-edge systems offer comprehensive monitoring and control over your entire fleet, allowing you to track vehicle locations, manage fuel consumption, and ensure driver efficiency. With our advanced technology, you can receive real-time data and analytics, helping you make informed decisions to reduce costs, improve productivity, and enhance overall fleet performance. Our expert technicians ensure a seamless installation process, customized to meet the specific needs of your business. Enhance your fleet management with our reliable and efficient solutions, and take control of your operational efficiency and fuel expenses like never before.",
+              "Optimize your business with our fleet and fuel management system installations. Monitor vehicle locations, fuel consumption, and driver efficiency with real-time data and analytics. Our customized solutions help reduce costs and boost productivity, with expert installation tailored to your business needs.",
             image: "/images/fleetmanagement.jpg",
           },
           {
             title: "EGR Error Solution",
             description:
-              "When we talk about upgrading vehicle performance, one of the most sought-after ECU tuning services is the EGR delete. In diesel engines, the Exhaust Gas Recirculation (EGR) system is one of the most important but also one of the most problematic components. We provide specialized solutions for resolving EGR errors. Our expert technicians use advanced diagnostic tools to accurately identify and fix EGR issues, ensuring that your vehicle runs smoothly and efficiently. Trust us to keep your engine performing at its best.",
+              "Resolve EGR issues with our expert solutions. The Exhaust Gas Recirculation system in diesel engines can be problematic. Using advanced diagnostics, we fix EGR errors to ensure smooth, efficient vehicle performance, keeping your engine at its best.",
             image: "/images/egr.jpg",
           },
           {
-            title: "ECU repair",
+            title: "ECU Repair",
             description:
-              "At CarKey Experts, we offer professional ECU (Engine Control Unit) repair services for a wide range of vehicles. The ECU is the brain of your car's engine management system, controlling various essential functions such as fuel injection, ignition timing, and emissions control. If your vehicle is experiencing issues such as poor performance, difficulty starting, or error codes related to the ECU, our experienced technicians are here to help. We use advanced diagnostic tools and techniques to accurately identify and repair faults in your ECU, ensuring your car operates at peak performance. With our reliable ECU repair services, you can trust us to restore your vehicle’s functionality and get you back on the road quickly.",
+              "Our professional ECU repair services address issues like poor performance or error codes. We use advanced diagnostics to repair your vehicle's Engine Control Unit, restoring optimal functionality. Trust us to get your car back to peak performance quickly and reliably.",
             image: "/images/ecurepair.jpg",
           },
           {
             title: "Catalytic Error Solution",
             description:
-              "Removing a catalytic converter (CAT) may increase power and slightly decrease fuel consumption. On some vehicles, physically removing the CAT can eventually lead to an engine malfunction, causing the vehicle to enter safety or limp mode. We can resolve this issue on most vehicles by removing the CAT function from the engine control unit (ECU) software. This means the ECU will no longer recognize the catalytic converter, preventing the vehicle from entering safety mode or limp mode.",
+              "Removing a catalytic converter can boost power but may cause engine issues. We resolve this by disabling the CAT function in the ECU software, preventing safety or limp mode. Our solution ensures your vehicle runs smoothly without errors.",
             image: "/images/catdelete.jpg",
           },
           {
             title: "DPF Error Solution",
             description:
-              "At CarKey Experts, we provide professional DPF (Diesel Particulate Filter) delete services directly from your vehicle's computer software. Our experienced technicians use advanced diagnostic tools to safely and effectively remove the DPF system from your vehicle's software, enhancing engine performance and fuel efficiency. This service is ideal for off-road or competition vehicles where regulations permit. Trust us to deliver a seamless DPF delete process that optimizes your vehicle's performance and reliability.",
+              "Our DPF delete services enhance engine performance and fuel efficiency by removing the Diesel Particulate Filter from your vehicle's software. Ideal for off-road or competition vehicles, our expert technicians ensure a seamless process for optimal reliability.",
             image: "/images/dpf.jpg",
           },
         ].map((service, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1 * index, type: "spring", stiffness: 80 }}
-            className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+            {...fadeIn}
+            viewport={{ once: true }}
+            className="bg-gray-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden"
           >
             <img
               src={service.image}
               alt={service.title}
-              className="w-full h-56 object-cover rounded-t-lg"
+              className="w-full h-48 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 text-base leading-relaxed">
+                {service.description}
+              </p>
             </div>
           </motion.div>
         ))}
       </div>
 
       {/* Additional Services */}
-      <div className="mt-20 space-y-16">
+      <div className="max-w-7xl mx-auto mt-20 space-y-20">
         {/* Car Alarm Installation */}
         <motion.div
-          initial={{ x: 300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 80 }}
-          className="flex flex-col lg:flex-row items-center gap-10"
+          {...slideIn}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
         >
           <img
             src="/images/caralarm.jpg"
             alt="Car Alarm"
-            className="w-full max-w-md rounded-lg shadow-md"
+            className="w-full h-80 object-cover rounded-xl shadow-md"
           />
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Car Alarm Installation
             </h2>
-            <p className="text-gray-600">
-              We provide professional car alarm installation services to enhance
-              the security of your vehicle. Our skilled technicians are
-              experienced in installing advanced alarm systems that deter theft
-              and provide peace of mind. We offer a range of high-quality alarm
-              options tailored to fit various car makes and models, ensuring
-              optimal protection. With our precise installation process, you can
-              trust that your car's alarm system will function reliably and
-              effectively. Choose CarKey Experts for top-notch car alarm
-              installations that keep your vehicle safe and secure.
+            <p className="text-gray-600 leading-relaxed text-base">
+              Protect your vehicle with our professional car alarm installation services. Our skilled technicians install advanced systems to deter theft, tailored to your car's make and model. Enjoy peace of mind with reliable, high-quality alarms and our precise installation process.
             </p>
           </div>
         </motion.div>
 
         {/* Car Key Battery Replacement */}
         <motion.div
-          initial={{ x: -300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, type: "spring", stiffness: 80 }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-10"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
         >
           <img
             src="/images/batteries.jpg"
             alt="Car Key Battery Replacement"
-            className="w-full max-w-md rounded-lg shadow-md"
+            className="w-full h-80 object-cover rounded-xl shadow-md"
           />
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Car Key Battery Replacement
             </h2>
-            <p className="text-gray-600">
-              We understand the inconvenience of a malfunctioning car key due to
-              a dead or weak battery. That's why we offer fast and reliable car
-              key battery replacement services to ensure your key fob is always
-              functioning at its best. Our skilled technicians can quickly
-              replace the battery in your car key, restoring its full
-              functionality so you can get back on the road without delay. We
-              use high-quality batteries to guarantee long-lasting performance.
-              Visit us today for a hassle-free car key battery replacement
-              experience.
+            <p className="text-gray-600 leading-relaxed text-base">
+              Don’t let a dead key fob slow you down. Our fast, reliable car key battery replacement service restores full functionality quickly. Using high-quality batteries, our technicians ensure long-lasting performance for your convenience.
             </p>
           </div>
         </motion.div>
+
+        {/* Ignition & Door Lock Repair */}
         <motion.div
-          initial={{ x: -300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.3, type: "spring", stiffness: 80 }}
-          className="flex flex-col lg:flex-row-reverse items-center gap-10"
+          {...slideIn}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
         >
           <img
             src="/images/ignitionlock.jpg"
-            alt="Car Key Battery Replacement"
-            className="w-full max-w-md rounded-lg shadow-md"
+            alt="Ignition & Door Lock Repair"
+            className="w-full h-80 object-cover rounded-xl shadow-md"
           />
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Ignition & door lock repair.
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Ignition & Door Lock Repair
             </h2>
-            <p className="text-gray-600">
-              At CarKey Experts, we specialize in comprehensive ignition and
-              door lock repair services for all car models. Our team of
-              experienced technicians is equipped with the knowledge and tools
-              to diagnose and fix a wide range of issues, from broken keys and
-              jammed locks to malfunctioning ignition systems. Whether your car
-              is a domestic model or a foreign make, we have the expertise to
-              handle it all. We understand how crucial it is to have a fully
-              functioning ignition and secure door locks, which is why we strive
-              to provide prompt and reliable service. Our repairs are conducted
-              with precision and care, using high-quality parts to ensure
-              long-lasting results. At CarKey Experts, we are committed to
-              getting you back on the road quickly and safely, with the peace of
-              mind that your vehicle's security is intact. Trust us for all your
-              ignition and door lock repair needs and experience the exceptional
-              service that sets us apart.
+            <p className="text-gray-600 leading-relaxed text-base">
+              We specialize in ignition and door lock repairs for all car models. Our expert technicians diagnose and fix issues like broken keys, jammed locks, or faulty ignitions with precision, using high-quality parts to ensure security and reliability.
             </p>
           </div>
         </motion.div>
