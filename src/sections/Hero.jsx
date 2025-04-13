@@ -4,54 +4,40 @@ import { FaPhoneVolume } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className="relative bg-center bg-cover bg-no-repeat bg-[url('https://images.unsplash.com/photo-1606128031531-52ae98c9707a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fGNhciUyMGtleXxlbnwwfHwwfHx8MA%3D%3D')] bg-gray-900 bg-blend-overlay">
-      <div className="absolute inset-0 bg-black opacity-40"></div> {/* Dark overlay */}
-      <div className="relative px-6 mx-auto max-w-screen-xl text-center py-32 lg:py-48">
+    <section className="relative bg-[url('https://images.unsplash.com/photo-1606128031531-52ae98c9707a?w=1080&auto=format&fit=crop&q=80')] bg-no-repeat bg-cover bg-center bg-gray-900 bg-blend-overlay">
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-8 py-32 lg:py-48 text-center text-white">
         {/* Heading */}
         <motion.h1
-          initial={{ x: -300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 40 },
-            opacity: { duration: 0.8 },
-          }}
-          className="mb-6 text-5xl font-extrabold tracking-tight leading-tight text-white md:text-6xl lg:text-7xl drop-shadow-lg"
+          initial={{ opacity: 0, y: -60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight drop-shadow-xl"
         >
           Lost Your Car Key or Need a Spare?
         </motion.h1>
 
         {/* Subheading */}
         <motion.p
-          initial={{ x: 300, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 40 },
-            opacity: { duration: 0.8 },
-          }}
-          className="mb-10 text-lg font-medium text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+          className="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 font-medium"
         >
-          Look no further! At <span className="text-white font-semibold">CarKey Experts</span>, we provide cutting-edge car key programming services to get you back on the road quickly and hassle-free. 
-          We program all car keys, and we are mobile—we can come to your location.
+          Look no further! At <span className="text-white font-semibold">CarKey Experts</span>, we provide cutting-edge car key programming services to get you back on the road quickly and hassle-free. We program all car keys and we’re mobile—we come to you!
         </motion.p>
 
         {/* Call to Action */}
         <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.3,
-            y: { type: "spring", stiffness: 50 },
-            opacity: { duration: 1 },
-          }}
-          className="flex flex-col items-center space-y-6 sm:flex-row sm:space-y-0 sm:justify-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
         >
-          <div className="flex items-center justify-center space-x-4 group">
-            <FaPhoneVolume className="text-white text-4xl lg:text-5xl group-hover:text-yellow-500 transition duration-300 ease-in-out" />
-            <h2 className="text-3xl lg:text-5xl font-extrabold text-white group-hover:text-yellow-500 transition duration-300 ease-in-out">
-              0716 884 011
-            </h2>
+          <div className="flex items-center gap-4 bg-yellow-500 text-black px-6 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer">
+            <FaPhoneVolume className="text-2xl" />
+            <span className="text-xl font-bold">0716 884 011</span>
           </div>
         </motion.div>
       </div>
