@@ -27,9 +27,8 @@ const Services = () => {
       image: "/images/lexuslostkey.jpg",
       text: (
         <>
-          At{" "}
-          <span className="font-semibold text-red-500">CarKeyExperts</span>, we
-          know losing your car keys can be a hassle. Our{" "}
+          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
+          we know losing your car keys can be a hassle. Our{" "}
           <span className="font-semibold text-red-500">
             lost car key services
           </span>{" "}
@@ -69,8 +68,8 @@ const Services = () => {
           offers fast and reliable emergency car door unlocking services.
           Whether your keys are lost or left inside, our skilled technicians use
           advanced tools to unlock any vehicle safely and without damage. Count
-          on us for prompt, professional service to get you back on your way,
-          no matter the time or place.
+          on us for prompt, professional service to get you back on your way, no
+          matter the time or place.
         </>
       ),
     },
@@ -82,13 +81,25 @@ const Services = () => {
           Give your car a modern touch with our car key upgrade services.
           Whether you're switching to a flip key, smart key, or adding remote
           locking features, our technicians ensure a seamless upgrade process.
-          At{" "}
-          <span className="font-semibold text-red-500">CarKeyExperts</span>, we
-          enhance your convenience and security with professionally upgraded
+          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
+          we enhance your convenience and security with professionally upgraded
           keys tailored to your vehicle.
         </>
       ),
       reverse: true,
+    },
+    {
+      title: "Remote Repair & Shell Replacement",
+
+      text: (
+        <>
+          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
+          we also specialize in replacing damaged car key casings and shells,
+          repairing faulty car key remotes, and fixing worn-out remote buttons.
+          Our technicians restore the functionality and look of your remote keys
+          with quality parts and fast service—so your key feels like new again.
+        </>
+      ),
     },
   ];
 
