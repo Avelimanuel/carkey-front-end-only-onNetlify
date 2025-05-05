@@ -152,23 +152,7 @@ const Services = () => {
             />
           </motion.div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          <motion.div
-            variants={imageVariants}
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            whileHover="hover"
-            viewport={{ once: true }}
-            className="relative h-80 w-full rounded-xl overflow-hidden shadow-xl border border-gray-200"
-          >
-            <motion.img
-              src="/images/cx5.png"
-              className="h-full w-full object-cover"
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.3 }}
-            />
-          </motion.div>
-        </div>
+      
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <motion.div
             variants={imageVariants}
