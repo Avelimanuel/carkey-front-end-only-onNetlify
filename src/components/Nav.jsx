@@ -11,9 +11,7 @@ const Nav = () => {
             alt="Car Key Experts Logo"
             className="h-12 w-auto rounded-md shadow-sm object-contain"
           />
-          <span className="text-xl font-bold text-gray-900 dark:text-white">
-            Car Key Experts
-          </span>
+          
         </a>
 
         {/* Mobile Menu Button */}
