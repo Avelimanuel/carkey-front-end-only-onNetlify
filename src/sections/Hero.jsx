@@ -31,9 +31,10 @@ const Hero = () => {
           className="mt-6 max-w-3xl mx-auto text-lg sm:text-xl text-gray-300 font-medium"
         >
           Lost your car key or need a spare?{" "}
-          <span className="text-white font-semibold">CarKey Experts</span> offers
-          professional car key replacement, programming, and emergency locksmith
-          services across Nairobi and Kenya. We’re mobile—so we come to you fast!
+          <span className="text-white font-semibold">CarKey Experts</span>{" "}
+          offers professional car key replacement, programming, and emergency
+          locksmith services across Nairobi and Kenya. We’re mobile—so we come
+          to you fast!
         </motion.h2>
 
         {/* Call to Action */}
@@ -48,7 +49,18 @@ const Hero = () => {
             className="flex items-center gap-4 bg-yellow-500 text-black px-6 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
             aria-label="Call CarKey Experts"
           >
-            <FaPhoneVolume className="text-2xl" />
+            <motion.div
+              animate={{
+                x: [0, -2, 2, -2, 2, 0], // back and forth
+              }}
+              transition={{
+                duration: 0.4,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            >
+              <FaPhoneVolume className="text-2xl" />
+            </motion.div>
             <span className="text-xl font-bold">0716 884 011</span>
           </a>
         </motion.div>
