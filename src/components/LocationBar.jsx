@@ -9,6 +9,7 @@ const LocationBar = () => {
     <div className="flex justify-center items-center bg-red-500 p-3 gap-5 text-white max-lg:flex-col">
       <FaLocationDot />
       <h1>Kiambu Road Near AAR Hospital</h1>
+      <h3 className="text-black">We Are Mobile, We Can Come To You</h3>
       
       <a
             href="tel:+254716884011"
