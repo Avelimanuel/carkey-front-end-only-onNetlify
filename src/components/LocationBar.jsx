@@ -30,8 +30,7 @@ const LocationBar = () => {
             </motion.div>
             <span className="font-bold">0716 884 011</span>
           </a>
-      <Link to="/" className="font-extrabold ">
-        Home </Link>
+      <h3 className="font-bold text-sm">Open 24/7</h3>
 
       
       <Link to="/workgallery" className="font-extrabold text-2xl">
