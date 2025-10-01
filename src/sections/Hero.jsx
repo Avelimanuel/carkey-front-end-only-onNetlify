@@ -45,7 +45,7 @@ const Hero = () => {
           className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
         >
           <a
-            href="tel:0716884011"
+            href="tel:+254716884011"
             className="flex items-center gap-4 bg-yellow-500 text-black px-6 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
             aria-label="Call CarKey Experts"
           >
