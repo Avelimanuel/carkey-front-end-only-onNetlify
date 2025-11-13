@@ -1,129 +1,153 @@
 const Services = () => {
   const sections = [
     {
-      title: "Lost Key Services",
+      title: "Lost Car Key Replacement Services in Kenya",
       image: "/images/lexuslostkey.jpg",
       text: (
         <>
-          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
-          we know losing your car keys can be a hassle. Our{" "}
+          Losing your car keys can be stressful. At{" "}
           <span className="font-semibold text-red-500">
-            lost car key services
-          </span>{" "}
-          are designed to get you back on the road fast. Equipped with
-          cutting-edge technology, our skilled locksmiths can{" "}
-          <span className="font-semibold text-red-600">
-            cut and program new keys
-          </span>{" "}
-          for any vehicle on the spot. Whether your keys are lost, stolen, or
-          damaged, our emergency mobile locksmiths are ready to assist you
-          anywhere, anytime.
+            CarKeyExperts Kenya
+          </span>
+          , we offer <strong>lost car key replacement</strong> and{" "}
+          <strong>car key programming services</strong> for all car models. Our
+          professional auto locksmiths use modern tools to{" "}
+          <strong>cut and program new car keys</strong> on the spot — quickly
+          and safely. Whether your keys are lost, stolen, or broken, our{" "}
+          <strong>mobile car locksmiths in Nairobi</strong> and across Kenya are
+          ready 24/7 to help you get back on the road.
         </>
       ),
     },
     {
-      title: "Spare Key Services",
+      title: "Spare Car Key Cutting and Programming",
       image: "/images/cx5.png",
       text: (
         <>
-          Stay prepared with our reliable spare key services. Our expert
-          technicians can quickly cut and program additional keys for any
-          vehicle, ensuring you always have a backup. With{" "}
-          <span className="font-semibold text-red-500">CarKeyExperts</span>,
-          enjoy the peace of mind and convenience that comes with a spare key,
-          crafted swiftly and professionally.
+          Don’t wait for an emergency. Our{" "}
+          <strong>spare car key cutting and programming services</strong> ensure
+          you always have a reliable backup. At{" "}
+          <span className="font-semibold text-red-500">CarKeyExperts</span>, we
+          create duplicate car keys for Toyota, Nissan, Mazda, BMW, Mercedes,
+          and more. Enjoy peace of mind with a professionally made spare key
+          from <strong>trusted car locksmiths in Kenya</strong>.
         </>
       ),
       reverse: true,
     },
     {
-      title: "Emergency Car Door Unlocking",
+      title: "Emergency Car Door Unlocking Services",
       image: "/images/emergencydoorunlocking.jpg",
       text: (
         <>
           Locked out of your car?{" "}
           <span className="font-semibold text-red-500">CarKeyExperts</span>{" "}
-          offers fast and reliable emergency car door unlocking services.
-          Whether your keys are lost or left inside, our skilled technicians use
-          advanced tools to unlock any vehicle safely and without damage. Count
-          on us for prompt, professional service to get you back on your way, no
-          matter the time or place.
+          provides <strong>emergency car unlocking services</strong> anywhere in
+          Kenya. Our team safely unlocks vehicles without damage using
+          specialized tools. Call our{" "}
+          <strong>24-hour car locksmiths in Nairobi</strong> for quick, reliable
+          car door unlocking whenever you need it.
         </>
       ),
     },
     {
-      title: "Car Key Upgrade",
+      title: "Car Key Upgrade and Smart Key Conversion",
       image: "/images/keyupgrade.jpg",
       text: (
         <>
-          Give your car a modern touch with our car key upgrade services.
-          Whether you're switching to a flip key, smart key, or adding remote
-          locking features, our technicians ensure a seamless upgrade process.
-          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
-          we enhance your convenience and security with professionally upgraded
-          keys tailored to your vehicle.
+          Upgrade your car keys for better convenience and security. Our{" "}
+          <strong>car key upgrade services</strong> include converting regular
+          keys into <strong>flip keys, smart keys, and remote keys</strong>. At{" "}
+          <span className="font-semibold text-red-500">CarKeyExperts</span>, we
+          provide seamless key upgrades for all car makes and models across
+          Kenya.
         </>
       ),
       reverse: true,
     },
     {
-      title: "Remote Repair & Broken Key Shell Replacement",
+      title: "Car Remote Repair and Broken Key Shell Replacement",
       image: "/images/brokenkeyshell.png",
       text: (
         <>
-          At <span className="font-semibold text-red-500">CarKeyExperts</span>,
-          we also specialize in replacing damaged car key casings and shells,
-          repairing faulty car key remotes, and fixing worn-out remote buttons.
-          Our technicians restore the functionality and look of your remote keys
-          with quality parts and fast service—so your key feels like new again.
+          Save money by repairing instead of replacing.{" "}
+          <span className="font-semibold text-red-500">CarKeyExperts</span>{" "}
+          specializes in <strong>car remote repair</strong> and{" "}
+          <strong>broken key shell replacement</strong>. We fix worn-out
+          buttons, damaged casings, and faulty remote circuits, restoring your
+          car remote to look and work like new.
         </>
       ),
     },
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-8 lg:px-20 bg-gray-50">
+    <section
+      className="py-16 px-4 sm:px-8 lg:px-20 bg-gray-50"
+      itemScope
+      itemType="https://schema.org/Service"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Heading */}
         <div className="mb-14 text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight">
-            Our Services
+          <h1
+            className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight"
+            itemProp="name"
+          >
+            Car Key and Locksmith Services in Kenya
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Expert solutions for all your car key and lock needs.
+          <p
+            className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto"
+            itemProp="description"
+          >
+            Professional car key programming, replacement, unlocking, and remote
+            repair services offered by{" "}
+            <span className="font-semibold text-red-500">
+              CarKeyExperts Kenya
+            </span>
+            .
           </p>
         </div>
 
         {/* Services Grid */}
         {sections.map((section, idx) => (
-          <div
+          <article
             key={idx}
             className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 ${
               section.reverse ? "lg:flex-row-reverse" : ""
             }`}
+            itemScope
+            itemType="https://schema.org/Service"
           >
             {/* Image */}
             {section.image && (
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg border border-gray-200 group">
                 <img
                   src={section.image}
-                  alt={section.title}
+                  alt={`${section.title} - CarKeyExperts Kenya`}
                   className="w-full h-full object-cover transform transition duration-500 group-hover:scale-105"
                   loading="lazy"
+                  itemProp="image"
                 />
               </div>
             )}
 
             {/* Text */}
             <div className="flex flex-col items-start mt-6 lg:mt-0">
-              <h2 className="text-3xl font-bold text-red-600 mb-4">
+              <h2
+                className="text-3xl font-bold text-red-600 mb-4"
+                itemProp="name"
+              >
                 {section.title}
               </h2>
-              <p className="text-gray-700 leading-relaxed text-lg">
+              <p
+                className="text-gray-700 leading-relaxed text-lg"
+                itemProp="description"
+              >
                 {section.text}
               </p>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>
