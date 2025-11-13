@@ -7,10 +7,14 @@ const Services = () => {
         <>
           At <span className="font-semibold text-red-500">CarKeyExperts</span>,
           we know losing your car keys can be a hassle. Our{" "}
-          <span className="font-semibold text-red-500">lost car key services</span>{" "}
+          <span className="font-semibold text-red-500">
+            lost car key services
+          </span>{" "}
           are designed to get you back on the road fast. Equipped with
           cutting-edge technology, our skilled locksmiths can{" "}
-          <span className="font-semibold text-red-600">cut and program new keys</span>{" "}
+          <span className="font-semibold text-red-600">
+            cut and program new keys
+          </span>{" "}
           for any vehicle on the spot. Whether your keys are lost, stolen, or
           damaged, our emergency mobile locksmiths are ready to assist you
           anywhere, anytime.
@@ -63,8 +67,8 @@ const Services = () => {
       reverse: true,
     },
     {
-      title: "Remote Repair & Shell Replacement",
-      image: "/images/remote-repair.jpg",
+      title: "Remote Repair & Broken Key Shell Replacement",
+      image: "/images/brokenkeyshell.png",
       text: (
         <>
           At <span className="font-semibold text-red-500">CarKeyExperts</span>,
