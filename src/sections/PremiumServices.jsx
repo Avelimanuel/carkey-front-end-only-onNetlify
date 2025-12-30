@@ -29,8 +29,10 @@ const PremiumServices = () => {
         </motion.h1>
 
         <p className="mt-4 text-lg text-gray-600">
-          Professional car key programming, GPS tracking installation, ECU
-          repair, and advanced vehicle security solutions.
+          Trusted automotive specialists in Kenya offering professional car key
+          cutting and programming, GPS tracking installation, ECU repair, fleet
+          management systems, and advanced vehicle security solutions for both
+          personal and commercial vehicles.
         </p>
       </header>
 
@@ -40,51 +42,51 @@ const PremiumServices = () => {
           {
             title: "Car Key Cutting",
             description:
-              "Precision car key cutting for all vehicle makes. Ideal for lost keys, spare keys, and replacements using advanced equipment.",
+              "Professional car key cutting services for all vehicle makes and models in Kenya. We cut and duplicate lost, damaged, or spare car keys using advanced key-cutting machines to ensure accuracy, durability, and full compatibility with your vehicle.",
             image: "/images/carkeycutting.jpg",
             alt: "Professional car key cutting service in Kenya",
           },
           {
             title: "Car GPS Tracking Installation",
             description:
-              "Real-time vehicle tracking with geofencing, speed alerts, and trip history for enhanced security.",
+              "Expert car GPS tracking installation in Kenya with real-time vehicle location monitoring, geofencing alerts, speed tracking, and trip history. Ideal for theft prevention, vehicle monitoring, and improved driver accountability.",
             image: "/images/car-gps-tracking-installation.png",
-            alt: "Car GPS tracking system installation",
+            alt: "Car GPS tracking system installation in Kenya",
           },
           {
             title: "Fleet Management Systems",
             description:
-              "Monitor fuel usage, vehicle location, and driver efficiency with our advanced fleet management solutions.",
+              "Advanced fleet management and fuel monitoring systems for businesses in Kenya. Track vehicle locations, fuel consumption, driver behavior, and fleet performance in real time to reduce costs and improve operational efficiency.",
             image: "/images/fleetmanagement.jpg",
-            alt: "Fleet management and fuel monitoring system",
+            alt: "Fleet management and fuel monitoring system in Kenya",
           },
           {
             title: "EGR Error Solution",
             description:
-              "Professional EGR diagnostics and error resolution for diesel vehicles to restore performance.",
+              "Reliable EGR error diagnostics and repair services for diesel vehicles. We identify and resolve Exhaust Gas Recirculation system faults to restore engine performance, improve fuel efficiency, and prevent recurring dashboard warning lights.",
             image: "/images/egr.jpg",
-            alt: "EGR error repair service for diesel engines",
+            alt: "EGR error repair service for diesel vehicles",
           },
           {
             title: "ECU Repair Services",
             description:
-              "Advanced ECU diagnostics and repairs to fix error codes and restore engine performance.",
+              "Professional ECU repair and diagnostics services for vehicles experiencing error codes, starting issues, or poor performance. Our advanced ECU solutions restore engine efficiency, reliability, and proper communication between vehicle systems.",
             image: "/images/ecurepair.jpg",
             alt: "Vehicle ECU repair and diagnostics service",
           },
           {
             title: "Catalytic Converter Error Solution",
             description:
-              "ECU software solutions to eliminate catalytic errors without triggering limp mode.",
+              "Specialized catalytic converter error solutions through safe ECU software adjustments. We eliminate catalytic fault codes and limp-mode issues, ensuring smooth engine operation without recurring dashboard warnings.",
             image: "/images/catdelete.jpg",
-            alt: "Catalytic converter error solution",
+            alt: "Catalytic converter error solution service",
           },
           {
             title: "DPF Error Solution",
             description:
-              "DPF software solutions for improved engine performance and fuel efficiency.",
+              "Professional DPF error solutions designed to improve engine performance and fuel efficiency. We safely resolve Diesel Particulate Filter software errors, reducing blockages, warning lights, and engine power loss.",
             image: "/images/dpf.jpg",
-            alt: "DPF error delete service",
+            alt: "DPF error delete and diagnostics service",
           },
         ].map((service, index) => (
           <motion.article
@@ -106,9 +108,9 @@ const PremiumServices = () => {
 
             {/* Content */}
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
+              <h2 className="text-xl font-bold text-gray-900 mb-2">
                 {service.title}
-              </h3>
+              </h2>
               <p className="text-gray-600 leading-relaxed">
                 {service.description}
               </p>
