@@ -8,7 +8,7 @@ const LocationBar = () => {
   return (
     <div className="flex justify-center items-center bg-red-500 p-3 gap-5 text-white max-lg:flex-col">
       <FaLocationDot />
-      <h1>Location : Kiambu Road Near AAR Hospital</h1>
+      <h1>Location : Kiambu Road - Nairobi Kenya</h1>
       <h3 className="text-black">We Are Mobile, We Can Come To You</h3>
 
       <a

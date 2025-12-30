@@ -2,7 +2,7 @@ const Services = () => {
   const sections = [
     {
       title: "Lost Car Key Replacement Services in Kenya",
-      image: "/images/lexuslostkey.jpg",
+      image: "/images/suzuki-swift-lost-key.jpg",
       text: (
         <>
           Losing your car keys can be stressful. At{" "}
@@ -21,7 +21,7 @@ const Services = () => {
     },
     {
       title: "Spare Car Key Cutting and Programming",
-      image: "/images/cx5.png",
+      image: "/images/toyotacross.jpg",
       text: (
         <>
           Don’t wait for an emergency. Our{" "}
