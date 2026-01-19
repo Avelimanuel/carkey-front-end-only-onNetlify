@@ -67,7 +67,7 @@ const Services = () => {
     },
     {
       title: "Car Remote Repair and Broken Key Shell Replacement",
-      image: "/images/brokenkeyshell.png",
+      image: "/images/brokenshell.jpeg",
       text: (
         <>
           Save money by repairing instead of replacing.{" "}
