@@ -36,6 +36,37 @@ const Services = () => {
       reverse: true,
     },
     {
+      title: "Latest Mercedes Benz Spare Key (From the year 2014 and up)",
+      image: "/images/MercGLE.png",
+      text: (
+        <>
+          Get a reliable <strong>Mercedes-Benz spare key</strong> for models
+          from
+          <strong> 2014 and above</strong>, professionally cut and programmed to
+          factory standards. At{" "}
+          <span className="font-semibold text-red-500">CarKeyExperts</span>, we
+          specialize in{" "}
+          <strong>
+            Mercedes smart key duplication, replacement, and programming
+          </strong>{" "}
+          for GLE, C-Class, E-Class, S-Class, and more. Our{" "}
+          <strong>experienced car locksmiths in Kenya</strong> ensure fast,
+          secure, and fully functional spare keys for your Mercedes-Benz.
+          <br />
+          <br />
+          <span className="text-sm text-gray-600 italic">
+            Disclaimer: For{" "}
+            <strong>Mercedes-Benz models from the year 2014 and up</strong>, a
+            working original key is required to make a spare key. We are unable
+            to offer spare key services if all keys are lost, damaged, or
+            non-functional.
+          </span>
+        </>
+      ),
+      reverse: true,
+    },
+
+    {
       title: "Emergency Car Door Unlocking Services",
       image: "/images/emergencydoorunlocking.jpg",
       text: (
