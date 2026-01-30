@@ -52,7 +52,7 @@ const Services = () => {
     },
     {
       title: "Car Key Upgrade and Smart Key Conversion",
-      image: "/images/keyupgrade.jpg",
+      image: "/images/rav4upgrade.png",
       text: (
         <>
           Upgrade your car keys for better convenience and security. Our{" "}
