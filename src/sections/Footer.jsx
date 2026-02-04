@@ -1,9 +1,9 @@
+
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  // Getting the current Year
   const currentYear = new Date().getFullYear();
 
   return (
@@ -11,48 +11,90 @@ const Footer = () => {
       initial={{ y: 300, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.2, y: { type: "spring", stiffness: 50 } }}
-      className="bg-red-600 text-white py-8"
+      className="bg-red-600 text-white"
     >
-      <div className="container mx-auto px-4">
-        {/* Main Footer Section */}
-        <div className="flex flex-wrap justify-between items-start gap-10 lg:flex-nowrap">
+      <div className="max-w-7xl mx-auto px-5 py-10">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:gap-16">
+          
           {/* Services Section */}
-          <div className="flex-1">
-            <h1 className="text-lg font-bold underline mb-4">Our Services</h1>
-            <ul className="space-y-2 text-sm">
-              <li>Spare Key Programming</li>
-              <li>All Keys Lost Programming</li>
-              <li>DPF delete</li>
-              <li>Car door unlocking</li>
+          <div>
+            <h2 className="text-lg font-semibold underline mb-4">
+              Car Key & Auto Security Services
+            </h2>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
+              <li>
+                <a href="/spare-key-programming" className="hover:underline">
+                  Spare Key Programming
+                </a>
+              </li>
+              <li>
+                <a href="/all-keys-lost" className="hover:underline">
+                  All Keys Lost Programming
+                </a>
+              </li>
+              <li>DPF Delete</li>
+              <li>
+                <a href="/car-unlocking" className="hover:underline">
+                  Car Door Unlocking
+                </a>
+              </li>
               <li>Fleet & Fuel Management</li>
-              <li>Car Computer Repair & Programming</li>
+              <li>Car Computer Repair</li>
               <li>Car Tracking Devices</li>
               <li>Car Electronics & Wiring</li>
-              <li>Car Alarms</li>
+              <li>Car Alarm Installation</li>
               <li>Dash Cameras</li>
               <li>Reverse Cameras</li>
             </ul>
           </div>
 
           {/* Location Section */}
-          <div className="flex-1">
-            <h1 className="text-lg font-bold underline mb-4">Location</h1>
-            <div className="flex items-center gap-2 mb-2">
-              <FaLocationDot size={20} className="text-white" />
-              <p className="text-sm">Along Kiambu Road Near AAR Hospital</p>
+          <div>
+            <h2 className="text-lg font-semibold underline mb-4">
+              Visit or Call Car Key Experts
+            </h2>
+
+            <address className="not-italic text-sm space-y-3">
+              <div className="flex items-start gap-3">
+                <FaLocationDot size={22} className="mt-1" />
+                <span>
+                  Along Kiambu Road, Near AAR Hospital, <br />
+                  Nairobi, Kenya
+                </span>
+              </div>
+            </address>
+
+            <p className="text-sm mt-4 leading-relaxed">
+              We provide professional car key programming, replacement,
+              unlocking, and vehicle security services across Nairobi and
+              allover kenya.
+            </p>
+
+            <div className="mt-5">
+              <a
+                href="tel:+254716884011"
+                className="inline-block text-2xl font-bold tracking-wide hover:underline"
+              >
+                0716 884 011
+              </a>
+              <p className="text-xs mt-1 opacity-90">
+                Call us for fast assistance
+              </p>
             </div>
-            <p className="text-2xl font-bold mt-2">0716 884 011</p>
           </div>
         </div>
 
-        {/* Bottom Footer Section */}
-        <div className="mt-8 border-t border-red-500 pt-4">
-          <h6 className="text-center text-sm">
-            &copy; {currentYear} Car Key Experts. All rights reserved.{" "}
-            <span className="text-blue-300 font-bold">
-              Crafted By WebCraftersKE
-            </span>
-          </h6>
+        {/* Bottom Footer */}
+        <div className="mt-10 border-t border-red-500 pt-5 text-center text-sm">
+          <p>
+            &copy; {currentYear}{" "}
+            <strong>Car Key Experts Kenya</strong>. All rights reserved.
+          </p>
+          <p className="mt-1 text-blue-200 font-semibold">
+            Crafted By WebCraftersKE
+          </p>
         </div>
       </div>
     </motion.footer>
