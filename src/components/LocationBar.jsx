@@ -9,7 +9,9 @@ const LocationBar = () => {
     <div className="flex justify-center items-center bg-red-500 p-3 gap-5 text-white max-lg:flex-col">
       <FaLocationDot />
       <h1>Location : Kiambu Road - Nairobi Kenya</h1>
-      <h3 className="text-black font-bold text-2xl">We Are Mobile, We Can Come To You</h3>
+      <h3 className="text-black font-bold text-2xl">
+        We Are Mobile, We Can Come To You
+      </h3>
 
       <a
         href="tel:+254716884011"

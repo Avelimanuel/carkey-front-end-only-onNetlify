@@ -1,3 +1,80 @@
+export const metadata = {
+  title:"Car Key Replacement Nairobi | Auto Locksmith Kenya | CarKeyExperts",
+  description:
+    "Looking for car key replacement in Nairobi? CarKeyExperts Kenya offers fast car key programming, duplication, lost key replacement, and emergency car unlocking services across Kenya. 24/7 mobile auto locksmith near you.",
+
+  keywords: [
+    "car key replacement Nairobi",
+    "auto locksmith Nairobi",
+    "lost car key Kenya",
+    "car key programming Nairobi",
+    "duplicate car key Kenya",
+    "car key cutting Nairobi",
+    "emergency car door unlocking Kenya",
+    "mobile car locksmith Nairobi",
+    "Mercedes key programming Nairobi",
+    "smart key conversion Kenya",
+    "car remote repair Nairobi",
+    "CarKeyExperts Kenya",
+    "smart key programming kenya",
+    "lost car key programming Nairobi",
+    "spare car key programming Kenya",
+    "car ignition lock repair Nairobi",
+    "car door lock repair kenya"
+  ],
+
+  metadataBase: new URL("https://carkeyexperts.co.ke"),
+
+  alternates: {
+    canonical: "/services",
+  },
+
+  openGraph: {
+    title: "Car Key Replacement & Auto Locksmith Services in Kenya",
+    description:
+      "24/7 car key replacement, programming, duplication & unlocking services in Nairobi and across Kenya. Fast, reliable, and professional auto locksmith services.",
+    url: "https://carkeyexperts.co.ke/services",
+    siteName: "CarKeyExperts Kenya",
+    images: [
+      {
+        url: "/images/suzuki-swift-lost-key.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Car Key Replacement Services in Nairobi Kenya",
+      },
+    ],
+    locale: "en_KE",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Key Replacement Nairobi | CarKeyExperts Kenya",
+    description:
+      "Lost your car keys? Get fast car key replacement, programming & unlocking services in Nairobi. Available 24/7.",
+    images: ["/images/suzuki-swift-lost-key.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  verification: {
+    google: "J97BYb9Y5f6L2KcF3Qf9xtV6sAtBLHG-EZThBWjbvm4",
+  },
+
+  category: "Automotive Key Services",
+};
+
+
 const Services = () => {
   const sections = [
     {
