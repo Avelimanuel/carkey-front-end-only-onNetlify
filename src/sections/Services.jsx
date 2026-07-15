@@ -21,6 +21,7 @@ export const metadata = {
     "spare car key programming Kenya",
     "car ignition lock repair Nairobi",
     "car door lock repair kenya",
+    "car dashboard camera installation Nairobi",
   ],
 
   metadataBase: new URL("https://carkeyexperts.co.ke"),
@@ -159,6 +160,60 @@ const Services = () => {
           car remote to look and work like new.
         </>
       ),
+    },
+    {
+      title: "4G Dashboard Camera Installation with Live Remote Viewing",
+      image: "/images/dashcamera.jpg",
+      text: (
+        <>
+          Protect your vehicle with our advanced{" "}
+          <strong>4G dashboard camera installation services</strong> at{" "}
+          <span className="font-semibold text-red-500">
+            CarKeyExperts Kenya
+          </span>
+          . Our smart dash cameras let you{" "}
+          <strong>view your vehicle live from anywhere</strong> using your
+          smartphone, giving you complete peace of mind whether you're at work,
+          home, or travelling.
+          <br />
+          <br />
+          Our professional-grade 4G dash cameras include:
+          <br />
+          <br />
+          <strong>📹 Live Remote Viewing</strong> – Watch your vehicle in real
+          time from anywhere through a secure mobile app.
+          <br />
+          <br />
+          <strong>🛡️ G-Sensor Protection</strong> – Automatically detects sudden
+          impacts or collisions and locks important footage so it cannot be
+          overwritten.
+          <br />
+          <br />
+          <strong>🔄 Loop Recording</strong> – Records continuously by
+          automatically replacing the oldest unlocked videos, ensuring you never
+          miss an important event.
+          <br />
+          <br />
+          <strong>🚗 24/7 Parking Mode Monitoring</strong> – Monitors your
+          vehicle while parked and records suspicious movement, attempted theft,
+          or vandalism.
+          <br />
+          <br />
+          <strong>📍 Built-in GPS Tracking</strong> – Records your vehicle's
+          location, route history, and speed, making it easier to review trips
+          and incident locations.
+          <br />
+          <br />
+          Whether you own a private vehicle, company fleet, taxi, or commercial
+          vehicle, our experienced technicians provide{" "}
+          <strong>
+            professional dashboard camera installation in Nairobi and across
+            Kenya
+          </strong>
+          , with neat wiring, complete setup, and after-installation support.
+        </>
+      ),
+      reverse: true,
     },
   ];
 
