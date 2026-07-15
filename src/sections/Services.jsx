@@ -1,8 +1,7 @@
 export const metadata = {
   title: "Car Key Replacement Nairobi | Auto Locksmith Kenya | CarKeyExperts",
   description:
-    "Looking for car key replacement in Nairobi? CarKeyExperts Kenya offers fast car key programming, duplication, lost key replacement, and emergency car unlocking services across Kenya. 24/7 mobile auto locksmith near you.",
-
+    "Looking for car key replacement in Nairobi? CarKeyExperts Kenya offers car key programming, duplication, lost key replacement, emergency car unlocking, 4G dashboard camera installation with live remote viewing, GPS tracking, parking mode monitoring, and auto locksmith services across Kenya.",
   keywords: [
     "car key replacement Nairobi",
     "auto locksmith Nairobi",
