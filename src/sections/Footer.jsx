@@ -74,10 +74,10 @@ const Footer = () => {
 
             <div className="mt-5">
               <a
-                href="tel:+254716884011"
+                href="tel:+254714615233"
                 className="inline-block text-2xl font-bold tracking-wide hover:underline"
               >
-                0716 884 011
+                0714 615 233
               </a>
               <p className="text-xs mt-1 opacity-90">
                 Call us for fast assistance

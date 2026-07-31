@@ -84,7 +84,7 @@ const Hero = () => {
         >
           {/* Call */}
           <a
-            href="tel:+254716884011"
+            href="tel:+254714615233"
             className="flex items-center gap-4 bg-yellow-500 text-black px-6 py-4 rounded-full shadow-xl hover:scale-105 transition"
           >
             <motion.div
@@ -93,12 +93,12 @@ const Hero = () => {
             >
               <FaPhoneVolume className="text-2xl" />
             </motion.div>
-            <span className="text-xl font-bold">0716 884 011</span>
+            <span className="text-xl font-bold">0714 615 233</span>
           </a>
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/254716884011"
+            href="https://wa.me/254714615233"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-green-500 text-white px-6 py-4 rounded-full shadow-xl hover:scale-105 transition"

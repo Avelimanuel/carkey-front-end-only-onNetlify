@@ -14,7 +14,7 @@ const LocationBar = () => {
       </h3>
 
       <a
-        href="tel:+254716884011"
+        href="tel:+254714615233"
         className="flex items-center gap-4  text-black px-6 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
         aria-label="Call CarKey Experts"
       >
@@ -30,11 +30,11 @@ const LocationBar = () => {
         >
           <FaPhoneVolume className="text-2xl" />
         </motion.div>
-        <span className="font-bold">0716 884 011</span>
+        <span className="font-bold">0714 615 233</span>
       </a>
       <h3 className="font-bold text-sm">Open 24/7 mobile service</h3>
       <a
-        href="https://wa.me/254716884011"
+        href="https://wa.me/254714615233"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
