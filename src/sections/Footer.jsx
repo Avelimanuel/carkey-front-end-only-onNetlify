@@ -77,7 +77,8 @@ const Footer = () => {
                 href="tel:+254714615233"
                 className="inline-block text-2xl font-bold tracking-wide hover:underline"
               >
-                0714 615 233
+                0716 884 011
+                
               </a>
               <p className="text-xs mt-1 opacity-90">
                 Call us for fast assistance

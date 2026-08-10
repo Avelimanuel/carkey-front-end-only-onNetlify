@@ -30,11 +30,11 @@ const LocationBar = () => {
         >
           <FaPhoneVolume className="text-2xl" />
         </motion.div>
-        <span className="font-bold">0714 615 233</span>
+        <span className="font-bold">0716 884 011</span>
       </a>
       <h3 className="font-bold text-sm">Open 24/7 mobile service</h3>
       <a
-        href="https://wa.me/254714615233"
+        href="https://wa.me/254716884011"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg hover:scale-105 transition duration-300 ease-in-out cursor-pointer"
